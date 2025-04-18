@@ -1,0 +1,265 @@
+/* body {
+    margin: 0;
+    padding: 40px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    color: #7fffd4;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  
+  .scroll-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .scroll-container {
+    display: flex;
+    gap: 25px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    padding-bottom: 30px;
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .card {
+    flex: 0 0 20%;
+    background: #1a1a1a;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 255, 100, 0.08);
+    scroll-snap-align: start;
+    height: 420px;
+    padding: 35px 25px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(46, 204, 113, 0.35);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card-content {
+    padding: 10px 0;
+  }
+  
+  .card h2 {
+    font-size: 1.3rem;
+    color: #7fffd4;
+    margin-bottom: 12px;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 18px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #00e676, #1de9b6);
+    color: #000;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 255, 150, 0.3);
+  }
+  
+  .read-more:hover {
+    background: linear-gradient(135deg, #1de9b6, #00e676);
+    transform: translateY(-3px) scale(1.03);
+  }
+  
+  @media (max-width: 992px) {
+    .card {
+      flex: 0 0 45%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      flex: 0 0 90%;
+    }
+  }
+   */
+   /* Wrapper adds padding */
+/* Main wrapper with subtle padding */
+/* Main wrapper with padding */
+/* General styles for layout */
+body {
+  margin: 0;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #7fffd4;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+/* Main wrapper with subtle padding */
+.scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Scrollable container */
+.scroll-container {
+  display: flex;
+  gap: 25px;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  padding-bottom: 30px;
+}
+
+/* Hides scrollbar */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card styling */
+.card {
+  flex: 0 0 20%;
+  background: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 255, 100, 0.08);
+  scroll-snap-align: start;
+  height: 420px;
+  padding: 35px 25px;
+  text-align: center;
+  position: relative;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(46, 204, 113, 0.35);
+}
+
+/* Card image styling */
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Card content styling */
+.card-content {
+  padding: 10px 0;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  color: #7fffd4;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 18px;
+}
+
+/* Read more button styling */
+.read-more {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #00e676, #1de9b6);
+  color: #000;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 255, 150, 0.3);
+}
+
+.read-more:hover {
+  background: linear-gradient(135deg, #1de9b6, #00e676);
+  transform: translateY(-3px) scale(1.03);
+}
+
+/* Responsive for Tablets */
+@media (max-width: 992px) {
+  .card {
+    flex: 0 0 45%;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .scroll-container {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .card {
+    flex: 0 0 90%; /* Take full width on mobile */
+    margin-bottom: 20px;
+    height: auto;  /* Let the height adjust according to content */
+  }
+
+  /* Adjust image size on mobile */
+  .card img {
+    height: 200px; /* Adjust image height for mobile screens */
+  }
+}
+body {
+  background-color: #000 !important; /* Deep black background */
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  padding: 40px 0;
+}
+
+/* Heading Image */
+.heading-img {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading-img img {
+  width: 410px;  /* Set width to match stats.png */
+  height: 141px; /* Set height to match stats.png */
+  object-fit: cover; /* Ensure image scales well */
+  filter: none;  /* Remove shadow */
+}
